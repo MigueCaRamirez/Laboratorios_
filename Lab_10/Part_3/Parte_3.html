@@ -7,23 +7,26 @@
 </head>
 <body>
     <script>
-       let esMayorDeEdad = true; 
-        let tieneLicencia = true; 
+        let nombre = "Miguel";
+        let apellido = "Canate";
+        let edad = 20;
+        let EsMayorDeEdad;
+        let tieneLicencia;
+        let PuedeConducir;
+        if (edad > 18 ){
+            tieneLicencia = true
+            EsMayorDeEdad = true
+            PuedeConducir = true
+        }
+
+        if(tieneLicencia == true && EsMayorDeEdad ==true){
+            console.log("Miguel Puede conducir: " + PuedeConducir)
+        }else{
+            console.log("Miguel no puede conducir " )
+        }
+        
 
 
-        let puedeConducir = esMayorDeEdad && tieneLicencia;
-
-       
-        let mensaje1 = "¡Hola! ";
-        let mensaje2 = "Bienvenido a la plataforma de conducción.";
-
-        let mensajeConcatenado = mensaje1 + mensaje2;
-
-
-        let mensajeFinal = `Estado de Conducción: ${puedeConducir ? "Puede conducir" : "No puede conducir"}`;
-
-        console.log(mensajeConcatenado);
-        console.log(mensajeFinal);
     </script>
 </body>
 </html>
