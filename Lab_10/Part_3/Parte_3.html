@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let esMayorDeEdad = true; 
+        let tieneLicencia = true; 
+
+
+        let puedeConducir = esMayorDeEdad && tieneLicencia;
+
+       
+        let mensaje1 = "¡Hola! ";
+        let mensaje2 = "Bienvenido a la plataforma de conducción.";
+
+        let mensajeConcatenado = mensaje1 + mensaje2;
+
+
+        let mensajeFinal = `Estado de Conducción: ${puedeConducir ? "Puede conducir" : "No puede conducir"}`;
+
+        console.log(mensajeConcatenado);
+        console.log(mensajeFinal);
+    </script>
+</body>
+</html>
