@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        op = 'S'
+        while(op == 'S'){
+            let numeroRamdom;
+            let NumeroPersona;
+
+            numeroRamdom = Math.floor(Math.random() * 10)+1;
+
+            NumeroPersona = parseInt(prompt("Adivina el numero: (entre 1 y 10) "));
+
+            if(NumeroPersona == numeroRamdom){
+                console.log("Felicidades, adivinaste el numero")
+            }else{
+                console.log("Fallaste, el numero era: " +numeroRamdom)
+            }
+
+
+
+        do{
+            op = prompt("¿Desea calcular otro IMC? (S/N): ").toUpperCase();
+        }while (op != 'N' && op != 'S')
+        }
+    </script>
+    
+</body>
+</html>
