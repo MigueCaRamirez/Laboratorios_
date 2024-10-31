@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        op = 'S'
+        while(op == 'S'){
+            let MontoTotal;
+
+            MontoTotal = parseFloat(prompt("Ingrese el monto de su compra: "))
+
+            if(MontoTotal > 100){
+                MontoTotal = MontoTotal- (MontoTotal* .10);
+                console.log("Se le ha aplicado un descuento, solo tendra que pagar: ", MontoTotal);
+            }else{
+                console.log("Tenga buen dia :3");
+            }
+
+
+        do{
+            op = prompt("¿Desea calcular otro IMC? (S/N): ").toUpperCase();
+        }while (op != 'N' && op != 'S')
+        }
+    </script>
+
+
+</body>
+</html>
