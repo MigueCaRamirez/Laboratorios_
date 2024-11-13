@@ -1,5 +1,6 @@
 /* Estilos generales */
 body {
+    background-color: rgb(66, 89, 124);
     font-family: Arial, sans-serif; /* Define la fuente de la página */
     margin: 0; /* Elimina el margen del cuerpo */
     padding: 0; /* Elimina el relleno del cuerpo */
@@ -7,11 +8,12 @@ body {
 
 /* Estilos del header y barra de navegación */
 header {
-    background-color: #333;
-    /*position: fixed; /* Fija el header en la parte superior de la página */
+    background-color: #176e63;
+    position: fixed; /* Fija el header en la parte superior de la página */
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 3); /* Sombra */
 }
 
 nav {
